@@ -1,5 +1,5 @@
 import axios from 'axios';
-const myUrl  = process.env.DATABASE_URL;
+const myUrl = process.env.API_URL;
 
 // 'http://localhost:5105/items';
 axios.defaults.baseURL = myUrl;
