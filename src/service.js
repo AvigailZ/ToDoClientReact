@@ -1,8 +1,8 @@
 import axios from 'axios';
-const myUrl = process.env.API_URL;
+
 
 // 'http://localhost:5105/items';
-axios.defaults.baseURL = 'https://todoapi-pgnp.onrender.com/items';
+axios.defaults.baseURL = `${process.env.REACT_APP_API_URL}`;
 
 axios.interceptors.response.use(
   response => response,
