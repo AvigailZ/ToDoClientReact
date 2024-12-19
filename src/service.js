@@ -2,7 +2,7 @@ import axios from 'axios';
 const myUrl = process.env.API_URL;
 
 // 'http://localhost:5105/items';
-axios.defaults.baseURL = myUrl;
+axios.defaults.baseURL = 'https://todoapi-pgnp.onrender.com/items';
 
 axios.interceptors.response.use(
   response => response,
